@@ -12,6 +12,8 @@ $(document).ready(function () {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
 
+var database = firebase.database();
+
     //Setting everything back to clear
     function clearInputs() {
         $(".form-control").val("");
@@ -49,11 +51,11 @@ $(document).ready(function () {
 
         var timeFrequency = childSnapshot.val().timing;
 
-        // Time is 3:30 AM
+        // Time is 
         var timeOne = "06:00";
 
-        // First Time (pushed back 1 year to make sure it comes before current time)
-        var timeOneConverted = moment(timeOne, "HH:mm").subtract(3, "years");
+        // First Time 
+        var timeOneConverted = moment(timeOne, "HH:mm").subtract(1, "years");
 
         // Current Time
         var currentTime = moment().format('HH:mm');
