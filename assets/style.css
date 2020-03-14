@@ -1,0 +1,26 @@
+body{
+    background-image:url("http://pngimg.com/uploads/trian/trian_PNG16652.png");
+    background-size: cover;
+}
+
+h1,
+p {
+    margin: 20px;
+}
+
+h1{
+    font: 60px bold ;
+}
+
+p{
+    font: 30px;
+}
+.jumbotron{
+    border: aqua solid;
+}
+.card{
+    border: aqua solid;
+}
+.card-header{
+    background-color: aqua;
+}

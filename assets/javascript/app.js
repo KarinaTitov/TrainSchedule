@@ -49,7 +49,7 @@ var database = firebase.database();
 
         //Current Time - push to DOM
 
-        var timeFrequency = childSnapshot.val().timing;
+        var timeFrequency = Number(childSnapshot.val().timing);
 
         // Time is 
         var timeOne = "06:00";
